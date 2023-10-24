@@ -1,0 +1,15 @@
+@media (max-width: 400px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .contact-group {
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .branch-card {
+        flex-direction: column;
+    }
+}

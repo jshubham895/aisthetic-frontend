@@ -1,0 +1,49 @@
+.store-timings {
+    text-align: left;
+    margin-top: 10px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.store-timings>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+    gap: 30px;
+    font-weight: 300;
+}
+
+.store-timings.visible {
+    opacity: 1;
+    max-height: 500px;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.timing-text {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px 0;
+}
+
+.store-text {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.store-icon {
+    position: relative;
+    top: -2px
+}
+
+.store-text:hover {
+    text-decoration: underline;
+}
+
+.hightlight-today {
+    font-weight: 400 !important;
+}

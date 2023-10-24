@@ -1,0 +1,78 @@
+.navbar-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    height: max-content;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.contact-group {
+    width: 100%;
+    display: flex;
+    font-weight: 200;
+}
+
+.book {
+    width: 100%;
+    text-align: end;
+    font-weight: 400;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contact-details>div {
+    padding: 0px 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    color: black;
+}
+
+.contact-details a {
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.back-route {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.back-route:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .contact-group {
+        flex-direction: column;
+        gap: 20px
+    }
+}
