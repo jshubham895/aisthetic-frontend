@@ -1,5 +1,6 @@
 "use client";
 
+import Animated from "@/components/animated/Animated";
 import BranchCard from "@/components/branchCard/BranchCard";
 import Header from "@/components/header/Header";
 import { branchDetails, storeDetails } from "@/interfaces/interface";
@@ -30,14 +31,16 @@ const Home = () => {
 			<Header homePage contactDetails={storeContactDetails} />
 			{branches.map((branch: branchDetails, idx: number) => {
 				return (
-					<Fade key={idx} bottom>
+					<Animated key={idx}>
+						{/* <Fade key={idx} bottom> */}
 						<BranchCard
 							branchDetails={branch}
 							onClick={() => {
 								router.push(`/branch/${branch.id}`);
 							}}
 						/>
-					</Fade>
+						{/* </Fade> */}
+					</Animated>
 				);
 			})}
 		</div>

@@ -40,6 +40,7 @@ export default class StoreManager {
 	}
 
 	getStoreStatus(storeTimings: any) {
+		debugger;
 		const currentTime = moment();
 		const currentDay = moment().format("dddd");
 
@@ -53,7 +54,7 @@ export default class StoreManager {
 			let nextDate = moment().add(1, "d");
 			let nextDay = moment(nextDate).format("dddd").toLowerCase();
 			while (!storeTimings[nextDay] || storeTimings[nextDay].closed) {
-				nextDate = moment().add(1, "d");
+				nextDate = moment(nextDate).add(1, "d");
 				nextDay = moment(nextDate).format("dddd").toLowerCase();
 			}
 

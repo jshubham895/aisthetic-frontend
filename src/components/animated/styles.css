@@ -1,0 +1,15 @@
+@keyframes translateYAndFadeIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: translateYAndFadeIn 0.5s ease both;
+}
